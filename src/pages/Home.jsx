@@ -45,6 +45,8 @@ function Home() {
 
   return (
     <div className="home">
+      
+        
       <form onSubmit={handleSearch} className="search-form">
         <input
           type="text"
@@ -57,6 +59,8 @@ function Home() {
           Search
         </button>
       </form>
+   
+      
 
         {error && <div className="error-message">{error}</div>}
 
@@ -67,6 +71,9 @@ function Home() {
           {movies.map((movie) => (
             <MovieCard movie={movie} key={movie.id} />
           ))}
+          {
+            //  <MovieCard movie={movies[0]} key={movies[0].id} />
+          }
         </div>
       )}
     </div>

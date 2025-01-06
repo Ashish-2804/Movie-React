@@ -4,7 +4,8 @@
   overflow: hidden;
   background-color: #1a1a1a;
   transition: transform 0.2s;
-  height: 100%;
+  height: 500px;
+  width: 300px;
   display: flex;
   flex-direction: column;
 }
